@@ -39,24 +39,4 @@ public class ComplexNumbers {
                 %.02f + %.02fi""", this.real, this.imagine);
     }
 
-    public double getReal() {
-        return real;
-    }
-
-    public void setReal(double real) {
-        this.real = real;
-    }
-
-    public double getImagine() {
-        return imagine;
-    }
-
-    public void setImagine(double imagine) {
-        this.imagine = imagine;
-    }
-
-    public void setComplexNumber(ComplexNumbers complexNumber){
-        this.real = complexNumber.getReal();
-        this.imagine = complexNumber.getImagine();
-    }
 }
