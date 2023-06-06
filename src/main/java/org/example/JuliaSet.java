@@ -46,7 +46,7 @@ public class JuliaSet extends JFrame implements ActionListener {
                     ComplexNumbers z = new ComplexNumbers(zx, zy);
 
                     int iteration = 0;
-                    while (z.magnitude() < RADIUS*RADIUS && iteration < MAX_ITERATION) {
+                    while (Math.pow(z.getReal(),2) + Math.pow(z.getImagine(),2) < RADIUS*RADIUS && iteration < MAX_ITERATION) {
                         z = z.multiply(z).add(c);
                         iteration++;
                     }
